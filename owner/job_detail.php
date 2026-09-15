@@ -2,7 +2,7 @@
 ob_start();
 $pageTitle = 'รายละเอียดงาน';
 $activePage = 'jobDetail';
-require_once __DIR__ . '/includes/auth.php';
+require_once __DIR__ . '/../includes/auth.php';
 requireRole('owner');
 $flashStatus = $_SESSION['status_flash'] ?? null;
 unset($_SESSION['status_flash']);
